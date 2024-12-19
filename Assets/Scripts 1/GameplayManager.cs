@@ -43,7 +43,7 @@ public class GameplayManager : MonoBehaviour
     private IEnumerator GameOver()
     {
         yield return new WaitForSeconds(2f);
-        if (score >= 40)
+        if (score >= 4)
         {
             
          GameManager.Instance.GameCompleted();

@@ -34,6 +34,9 @@ public class Player : MonoBehaviour
     {
         transform.localPosition = Vector3.up * currentRadius;
         float rotateValue = _rotateSpeed * Time.fixedDeltaTime * _startRadius / currentRadius;
+        Debug.Log($"Rotate Value: {rotateValue}");
+        Debug.Log($"Current Radius: {currentRadius}");
+        Debug.Log($"Start Radius: {_startRadius}");
         _rotateTransform.Rotate(0, 0, rotateValue);
     }
 
